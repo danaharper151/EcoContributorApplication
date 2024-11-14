@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.ecocontributorapplication.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.ecocontributorapplication.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.ecocontributorapplication.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <activity
+        android:id="@+id/nav_login"
+        android:name="com.example.ecocontributorapplication.ui.login.LoginActivity"
+        android:label="@string/menu_login"
+        tools:layout="@layout/activity_login" />
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.example.ecocontributorapplication.ui.logout.LogoutFragment"
+        android:label="@string/menu_logout"
+        tools:layout="@layout/fragment_logout" />
+    <activity
+        android:id="@+id/nav_search"
+        android:name="com.example.ecocontributorapplication.ui.search.SearchActivity"
+        android:label="@string/menu_search"
+        tools:layout="@layout/activity_search" />
+    <activity
+        android:id="@+id/nav_resources"
+        android:name="com.example.ecocontributorapplication.ui.resources.ResourcesActivity"
+        android:label="@string/menu_resources"
+        tools:layout="@layout/activity_resources" />
+</navigation>
