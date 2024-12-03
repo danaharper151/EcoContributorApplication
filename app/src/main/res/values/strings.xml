@@ -15,10 +15,11 @@
     <string name="menu_logout">Logout</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="menu_gallery">Gallery</string>
-
+    <string name="login_message">Existing users log in, and new users sign up.</string>
     <string name="login_title">Login</string>
-    <string name="hint_email">Email</string>
-    <string name="hint_password">Password</string>
-    <string name="btn_login">Login</string>
+    <string name="hint_email">Enter your email</string>
+    <string name="hint_password">Enter your password</string>
+    <string name="btn_login">LOGIN</string>
 
+    <string name="content_desc_btn_login">Press to log in</string>
 </resources>

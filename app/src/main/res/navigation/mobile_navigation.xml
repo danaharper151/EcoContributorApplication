@@ -2,8 +2,16 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    app:startDestination="@id/nav_login">
+    app:startDestination="@id/nav_home">
 
+    <!-- Home Fragment -->
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.ecocontributorapplication.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <!-- Login Fragment -->
     <fragment
         android:id="@+id/nav_login"
         android:name="com.example.ecocontributorapplication.ui.login.LoginFragment"
@@ -12,11 +20,15 @@
         <action
             android:id="@+id/action_nav_login_to_nav_home"
             app:destination="@id/nav_home" />
+        <action
+            android:id="@+id/action_nav_login_to_nav_signup"
+            app:destination="@id/nav_signup" />
     </fragment>
 
+    <!-- Sign-Up Fragment -->
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.example.ecocontributorapplication.ui.home.HomeFragment"
-        android:label="Home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/nav_signup"
+        android:name="com.example.ecocontributorapplication.ui.signup.SignUpFragment"
+        android:label="Sign Up"
+        tools:layout="@layout/fragment_signup" />
 </navigation>

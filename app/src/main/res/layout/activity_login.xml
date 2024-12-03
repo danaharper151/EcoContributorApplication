@@ -5,18 +5,87 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.login.LoginActivity">
+    tools:context=".ui.login.LoginActivity"
+    android:background="@color/white">
 
+    <!-- Login Title -->
     <TextView
+        android:id="@+id/loginTitle"
         android:layout_width="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:text="Login Screen"
-        android:textSize="42sp"
-        android:fontFamily="serif"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="24sp"
         android:textStyle="bold"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_height="wrap_content"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <!-- Email Input -->
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/loginTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/emailInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Log In Button -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="LOG IN"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/passwordInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="24dp" />
+
+    <!-- Sign Up Button -->
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/teal_200"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/loginButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="16dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

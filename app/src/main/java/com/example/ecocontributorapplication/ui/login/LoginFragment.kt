@@ -21,6 +21,7 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
     ): View {
         _binding = FragmentLoginBinding.inflate(inflater, container, false)
 
+        // Login Button
         binding.btnLogin.setOnClickListener {
             val email = binding.etEmail.text.toString()
             val password = binding.etPassword.text.toString()
@@ -30,6 +31,11 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
             } else {
                 Snackbar.make(binding.root, "Please enter both email and password", Snackbar.LENGTH_SHORT).show()
             }
+        }
+
+        // Sign-Up Button
+        binding.tvSignUp.setOnClickListener {
+            findNavController().navigate(R.id.action_nav_login_to_nav_signup)
         }
 
         return binding.root
